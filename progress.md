@@ -21,3 +21,12 @@ Timeline: 90 days | Min 4 hrs/day
 ## Day 3
 - Cleared Git workflow, set up progress log
 - AZ-900 theory: Azure global infrastructure (in progress)
+
+## Day 4 (Jun 24) - 87 days left
+- AZ-900 Domain 2 COMPLETE: compute (VM/VMSS/App Service/containers/Functions),
+  networking (VNet/subnet/NSG/peering), storage (blob+tiers/files/queue/table),
+  databases (Azure SQL/Cosmos), resource hierarchy, IaC (ARM/Bicep)
+- Concepts: kernel, stateful/stateless, sync/async
+- Python: conditionals (if/elif/else), comparison operators, first-match-wins,
+  boundary trap (< vs <=)
+- Built link_check.py - latency classifier, tested boundaries, committed+pushed
