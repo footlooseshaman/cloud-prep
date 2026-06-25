@@ -30,3 +30,22 @@ Timeline: 90 days | Min 4 hrs/day
 - Python: conditionals (if/elif/else), comparison operators, first-match-wins,
   boundary trap (< vs <=)
 - Built link_check.py - latency classifier, tested boundaries, committed+pushed
+
+
+## Day 5
+
+**Azure (AZ-900):**
+- Completed Domain 3: cost management (TCO, CapEx vs OpEx, cost factors, Pricing Calculator, Cost Management, budgets/alerts)
+- Governance: tags, Azure Policy, resource locks, Microsoft Purview
+- Identity & security: Entra ID, AuthN vs AuthZ, MFA, SSO, passwordless, external identities, Conditional Access, Zero Trust, defense-in-depth, Defender for Cloud, RBAC
+- Monitoring: Azure Monitor, Service Health, Azure Advisor
+- Verified full syllabus against live official Microsoft Learn outline (Jan 14 2026 version)
+- **AZ-900 theory: 100% complete**
+
+**Python:**
+- Functions: def, parameters vs arguments, return vs print, positional & keyword args
+- Dictionaries: key-value access, .get() safe retrieval, .items() loop, list-of-dictionaries (Netmiko inventory pattern)
+- **Both Netmiko blockers (functions + dictionaries) cleared**
+- Committed: functions_practice.py
+
+**Status:** 85 days left. Ahead of pace. Next: AZ-900 practice exam OR begin Netmiko.
