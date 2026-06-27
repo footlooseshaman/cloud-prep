@@ -49,3 +49,15 @@ Timeline: 90 days | Min 4 hrs/day
 - Committed: functions_practice.py
 
 **Status:** 85 days left. Ahead of pace. Next: AZ-900 practice exam OR begin Netmiko.
+
+
+## Day 6
+
+**Azure (AZ-104):**
+- Started AZ104
+
+## Day 7
+** AZure (AZ-104):**
+- Domain 
+
+** Netmiko **
