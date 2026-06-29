@@ -61,3 +61,34 @@ Timeline: 90 days | Min 4 hrs/day
 - Domain 
 
 ** Netmiko **
+
+
+## Day 9 — AZ-104 Storage (Domain 2 complete) + Netmiko config automation
+
+**Time:** Day 9 / 90 · 81 days remaining
+
+### Refresher
+- 4/5 — refinements: 802.1X/NAC ↔ Conditional Access (not Entra ID broadly); user-delegation SAS security rationale (blast radius / revocable via delegation key)
+
+### AZ-104 — Domain 2 Storage (CLOSED)
+- **Network access controls**
+  - Storage firewall — network-layer ACL: permit IPs/VNets, deny rest; account stays public
+  - Service endpoint — subnet gets trusted backbone route; source = subnet identity; account stays public; per-subnet; free
+  - Private endpoint — private IP inside VNet; public endpoint can be fully disabled; per-resource; needs private DNS zone; has cost
+- **Data protection**
+  - Soft delete — recover deleted blobs/containers within retention window
+  - Versioning — auto-preserve prior state on overwrite/delete; roll back to any version
+  - Snapshot — manual point-in-time read-only copy
+  - Immutability (WORM) — platform-enforced read-only; survives even Owner; time-based or legal hold; compliance/BFSI staple
+  - Key principle: first three live inside the permission model (Owner can purge); immutability is enforced above the identity layer
+
+### Netmiko
+- Added `send_config_set` — sends list of config commands, auto-enters/exits config mode (running-config only)
+- Added `save_config` — persists running → startup; Netmiko picks correct per-platform command (`write mem`)
+- Both verified on live Catalyst 8000v DevNet sandbox
+- Mental model: `send_command` (read) → `send_config_set` (write/temp) → `save_config` (persist)
+
+### Owed to Day 10
+- Python Rung 3 (default parameters)
+- Likely open AZ-104 Domain 3 — Virtual Networking
+
